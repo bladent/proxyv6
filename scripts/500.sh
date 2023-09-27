@@ -76,7 +76,7 @@ upload_proxy() {
     cd $WORKDIR
     local PASS=$(random)
     zip ${IP4}.zip proxy.txt
-    URL=$(curl -F "file=@${IP4}.zip" https://file.io)
+    URL=$(curl -F "file=@${IP4}.zip" https://transfer.sh)
     echo "Download zip archive from: ${URL}"
 
 
